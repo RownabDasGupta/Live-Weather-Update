@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #000;
+    color: #fff;
+
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    /* background-image: url("Images/background.jpg"); */
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 220px;
+    height: 70px;
+
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    ;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+
+}
+
+.home-contact .fa-solid {
+    color: #ff004f;
+}
+
+.heading {
+    text-align: center;
+    color: #59f843;
+}
+
+.search-place {
+    color: #000;
+    display: inline-block;
+    padding: 7px;
+}
+
+.search-button {
+    background-color: #ff004f;
+    color:#fff;
+    display: inline-block;
+    padding: 7px;
+}
+
+
+
+.home-contact {
+	margin-top: 3%;
+    color: #ff004f;
+    font-size: 20px;
+}
+
+.home-contact .fa-solid {
+	color: #fff;
+}
+
+
+
+/* ------------------ starts of weather data ------------- */
+
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+
+        
+    position: relative;
+    text-align: center;
+}
+
+.work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.centered {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+    height: 0;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f); */
+    border-radius: 10px;
+    /* overflow: hidden; */
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+.btn {
+    display: block;
+    margin: 30px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+
+.btn:hover {
+    background: #ff004f;
+}
+
+
+.list1 {
+    text-decoration: none;
+    text-align: center;
+    list-style-type: none;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 20px;
+}
+
+
+
+
+
+
+/* -----------------   About   --------------- */
+/* #about {
+    
+    width: 100%;
+    height: 100vh;
+    /* background-image: url("Images/background.jpg"); */
+    background-size: cover;
+    background-position: center;
+}
+
+.container2 h1 {
+    padding: 10px 10%;
+    color:#ff004f;
+    font-size: 65px;
+
+}
+
+.container2 p {
+    padding: 10px 10%;
+    color:#fff;
+    font-size: 18px;
+}
+
+
+.user-img img {
+    border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+
+	width: 200px;
+    height: 270px;
+	border-radius: 10px;
+	display: block;
+	transition: transform 0.5s;
+    margin: 50px 140px 15px 140px;
+}
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    #header {
+        background-color: #000;
+        /*	-image: url(Images/phone-background.png);  */
+    }
+
+    nav .custom {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul {
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .custom {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+}
